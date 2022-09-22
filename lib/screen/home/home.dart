@@ -9,6 +9,14 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, "/add");
+        },
+        child: const Icon(
+          Icons.add,
+        ),
+      ),
       appBar: AppBar(
         title:  const Text("Meus contatos"),
       ),
